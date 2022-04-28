@@ -1,5 +1,8 @@
 import express from "express";
+import cors from "cors";
 const server = express();
+// If you pass some parameter, you can manage security!
+server.use(cors());
 
 let jsonData = [
   {
